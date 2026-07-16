@@ -8,8 +8,9 @@ for(let i = 0; i < Arr.length; i ++){
         secondMax = max ;
         max = Arr[i];
     }
-     else if (Arr[i] > secondMax && Arr[i] != max){
-         secondMax = Arr[i];
+     else if (Arr[i] > secondMax && Arr[i] !== max) {
+
+        secondMax = Arr[i];
     }
 }
 console.log(secondMax);
