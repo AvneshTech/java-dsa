@@ -1,16 +1,16 @@
-let Arr= [3,6,7,8,6,4,0,23];
+let Arr = [3, 6, 7, 8, 6, 4, 0, 23];
 
-let max = Integer.MIN_VALUE;
-let secondMax = Integer.MIN_VALUE;
+// Replaced Integer.MIN_VALUE with JavaScript's -Infinity
+let max = -Infinity;
+let secondMax = -Infinity;
 
-for(let i = 0; i < Arr.length; i ++){
-    if (Arr[i] > max){
-        secondMax = max ;
+for (let i = 0; i < Arr.length; i++) {
+    if (Arr[i] > max) {
+        secondMax = max;
         max = Arr[i];
-    }
-     else if (Arr[i] > secondMax && Arr[i] !== max) {
-
+    } else if (Arr[i] > secondMax && Arr[i] !== max) {
         secondMax = Arr[i];
     }
 }
-console.log(secondMax);
+
+console.log(secondMax); // Output: 8
