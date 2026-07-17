@@ -13,4 +13,4 @@ for (let i = 0; i < Arr.length; i++) {
     }
 }
 
-console.log(secondMax); // Output: 8
+console.log(secondMax);
