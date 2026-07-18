@@ -1,1 +1,14 @@
-let arr = [1,2,3,4,5,6,7,8,9,10]; let target = 10; let seen = new Set(); for (let num of arr) { let complement = target - num; if (seen.has(complement)) { console.log(complement, num); } seen.add(num); }
+let arr = [1,2,3,4,5,6,7,8,9,10];
+let target = 10;
+
+let seen = new Set();
+
+for (let num of arr) {
+    let complement = target - num;
+
+    if (seen.has(complement)) {
+        console.log(complement, num);
+    }
+
+    seen.add(num);
+}
